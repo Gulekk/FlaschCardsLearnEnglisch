@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-            body{
+
+            body, html {
+            height: 80%;
+            }
+            body {
             background-image: url("learn-english-in-uk.jpg");
-            background-size: auto;
+             /* Full height */
+                height: 80%;
+
+             /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
             .container{
