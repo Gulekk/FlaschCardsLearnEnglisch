@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+            body{
+            background-image: url("learn-english-in-uk.jpg");
+            background-size: auto;
+            }
+
+            .container{
+               position: relative;
+                width: 1000px;
+                margin: 180px auto;
+                left: 250px;
+                display: block   
+            }
+            .card-wrapper{
+                width: 500px;
+                height: 300px;
+                perspective: 1000;
+                position:absolute;
+                top: 0;
+                left: 0;
+            }
+            .card{
+                transition: 1s cubic-bezier(0.68, -0.55, 0.35, 1);
+                transform-style: preserve-3d;
+                position: relative;
+              left:0;
+            }
+            .card.click{
+                transform: rotateY(180deg);
+              transform-origin: left;
+              left:500px;
+            }
+            .flip{
+                transition: 1s;
+                transform-style: preserve-3d;
+                position: relative;
+              
+            }
+            .flash-card{
+                width: 460px;
+                height: 150px;
+                padding:75px 20px;
+                border:1px solid #000;
+               
+                background: #fff;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .Author, .Title{
+                backface-visibility: hidden;
+               
+            }
+            .Author{
+                transform: rotateY(0deg);
+            }
+            .Title{
+                transform: rotateY(180deg);
+            }
+            h1{
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+            }
+            h2{
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+            }
+
+            footer {
+                position: absolute;
+                align-items: center;
+                bottom: 20px;
+                left: 800px;
+                font-weight: 700;
+            }
