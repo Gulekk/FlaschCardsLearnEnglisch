@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-            body, html {
-            height: 80%;
-            }
+@media (max-width: 768px) {
+    body {
+        height:100vh;
+    }
+}
             body {
             background-image: url("learn-english-in-uk.jpg");
              /* Full height */
-                height: 80%;
+                height: 100vh;
 
              /* Center and scale the image nicely */
                 background-position: center;
@@ -33,7 +35,7 @@
                 transition: 1s cubic-bezier(0.68, -0.55, 0.35, 1);
                 transform-style: preserve-3d;
                 position: relative;
-              left:0;
+                left:0;
             }
             .card.click{
                 transform: rotateY(180deg);
