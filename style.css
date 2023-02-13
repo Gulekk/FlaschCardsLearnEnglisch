@@ -18,10 +18,11 @@
 
             .container{
                position: relative;
-                width: 1000px;
-                margin: 180px auto;
-                left: 250px;
-                display: block   
+                display: block; 
+                margin: auto;
+                width: 50%;
+                padding: 250px;
+                bottom: -600px;
             }
             .card-wrapper{
                 width: 500px;
@@ -29,7 +30,7 @@
                 perspective: 1000;
                 position:absolute;
                 top: 0;
-                left: 0;
+                left: 50;
             }
             .card{
                 transition: 1s cubic-bezier(0.68, -0.55, 0.35, 1);
